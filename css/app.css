@@ -1,0 +1,41 @@
+body{
+    background: #f4f4f4;
+}
+h1{
+    text-align: center;
+}
+.gallery-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery-container img{
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    box-shadow:-3px 5px 15px #000;
+}
+.gallery-container img:hover{
+    width: 205px;
+    border: 2px;
+    cursor: pointer;
+    transition: .4s;
+}
+@media (max-width: 800px){
+    .gallery-container img{
+        width: 150px;
+    }
+    .gallery-container  img:hover{
+        width: 152px;
+    }
+}
+
+@media (max-width: 350px){
+    .gallery-container img{
+        width: 120px;
+    }
+    .gallery-container  img:hover{
+        width: 122px;
+    }
+}
